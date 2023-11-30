@@ -13,4 +13,3 @@ To force an option to use its default setting, prefix it with an `@`, ex:
 ```
 
 This will ignore the current value setting and suppress config warnings about options using their default values.
-
