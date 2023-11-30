@@ -62,7 +62,7 @@ namespace Server.Misc
 			}
 
 			PackItem(new RedBook("a book", m.Name, 20, true));
-			PackItem(new Gold(1000)); // Starting gold can be customized here
+			//PackItem(new Gold(1000)); // Starting gold can be customized here
 			PackItem(new Candle());
 
 			if (m.Race != Race.Gargoyle)
