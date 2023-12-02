@@ -11,14 +11,13 @@ namespace Server.Spells.Mysticism
         public override bool DelayedDamageStacking { get { return false; } }
 
         private static SpellInfo m_Info = new SpellInfo(
-                "Bombard", "Corp Por Ylem",
-                230,
-                9022,
-                Reagent.Bloodmoss,
-                Reagent.Garlic,
-                Reagent.SulfurousAsh,
-                Reagent.DragonBlood
-            );
+            "Bombard", "Corp Por Ylem",
+            230,
+            9022);
+            //Reagent.Bloodmoss,
+            //Reagent.Garlic,
+            //Reagent.SulfurousAsh,
+            //Reagent.DragonBlood);
 
         public BombardSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
         {

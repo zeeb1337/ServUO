@@ -10,10 +10,10 @@ namespace Server.Spells.Fourth
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Arch Cure", "Vas An Nox",
             215,
-            9061,
-            Reagent.Garlic,
-            Reagent.Ginseng,
-            Reagent.MandrakeRoot);
+            9061);
+            //Reagent.Garlic,
+            //Reagent.Ginseng,
+            //Reagent.MandrakeRoot);
         public ArchCureSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

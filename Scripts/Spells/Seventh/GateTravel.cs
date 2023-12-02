@@ -13,10 +13,10 @@ namespace Server.Spells.Seventh
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Gate Travel", "Vas Rel Por",
             263,
-            9032,
-            Reagent.BlackPearl,
-            Reagent.MandrakeRoot,
-            Reagent.SulfurousAsh);
+            9032);
+            //Reagent.BlackPearl,
+            //Reagent.MandrakeRoot,
+            //Reagent.SulfurousAsh);
 
         private readonly RunebookEntry m_Entry;
 

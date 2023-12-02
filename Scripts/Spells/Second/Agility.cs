@@ -8,9 +8,9 @@ namespace Server.Spells.Second
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Agility", "Ex Uus",
             212,
-            9061,
-            Reagent.Bloodmoss,
-            Reagent.MandrakeRoot);
+            9061);
+            //Reagent.Bloodmoss,
+            //Reagent.MandrakeRoot);
         public AgilitySpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

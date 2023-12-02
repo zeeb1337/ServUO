@@ -8,10 +8,10 @@ namespace Server.Spells.Fifth
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Summon Creature", "Kal Xen",
             16,
-            false,
-            Reagent.Bloodmoss,
-            Reagent.MandrakeRoot,
-            Reagent.SpidersSilk);
+            false);
+            //Reagent.Bloodmoss,
+            //Reagent.MandrakeRoot,
+            //Reagent.SpidersSilk);
         // NOTE: Creature list based on 1hr of summon/release on OSI.
         private static readonly Type[] m_Types = new Type[]
         {

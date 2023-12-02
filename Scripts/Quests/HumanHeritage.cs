@@ -5,7 +5,7 @@ using Server.Mobiles;
 namespace Server.Engines.Quests
 {
     public class IngenuityQuest : BaseQuest
-    { 
+    {
         public IngenuityQuest()
             : base()
         { 

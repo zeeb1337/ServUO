@@ -13,12 +13,11 @@ namespace Server.Spells.SkillMasteries
         public static string ModName = "MysticWeapon";
 
         private static SpellInfo m_Info = new SpellInfo(
-                "Mystic Weapon", "Vas Ylem Wis",
-                -1,
-                9002,
-                Reagent.FertileDirt,
-                Reagent.Bone
-            );
+            "Mystic Weapon", "Vas Ylem Wis",
+            -1,
+            9002);
+            //Reagent.FertileDirt,
+            //Reagent.Bone);
 
         public override double RequiredSkill { get { return 90; } }
         public override int RequiredMana { get { return 40; } }

@@ -10,9 +10,9 @@ namespace Server.Spells.Necromancy
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Corpse Skin", "In Agle Corp Ylem",
             203,
-            9051,
-            Reagent.BatWing,
-            Reagent.GraveDust);
+            9051);
+            //Reagent.BatWing,
+            //Reagent.GraveDust);
 
         private static readonly Dictionary<Mobile, ExpireTimer> m_Table = new Dictionary<Mobile, ExpireTimer>();
 

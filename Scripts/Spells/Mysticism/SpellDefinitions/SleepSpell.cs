@@ -11,13 +11,12 @@ namespace Server.Spells.Mysticism
         public override SpellCircle Circle { get { return SpellCircle.Third; } }
 
         private static SpellInfo m_Info = new SpellInfo(
-                "Sleep", "In Zu",
-                230,
-                9022,
-                Reagent.Nightshade,
-                Reagent.SpidersSilk,
-                Reagent.BlackPearl
-            );
+            "Sleep", "In Zu",
+            230,
+            9022);
+            //Reagent.Nightshade,
+            //Reagent.SpidersSilk,
+            //Reagent.BlackPearl);
 
         public SleepSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
         {

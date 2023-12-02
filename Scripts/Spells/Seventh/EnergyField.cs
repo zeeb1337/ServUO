@@ -12,11 +12,11 @@ namespace Server.Spells.Seventh
             "Energy Field", "In Sanct Grav",
             221,
             9022,
-            false,
-            Reagent.BlackPearl,
-            Reagent.MandrakeRoot,
-            Reagent.SpidersSilk,
-            Reagent.SulfurousAsh);
+            false);
+            //Reagent.BlackPearl,
+            //Reagent.MandrakeRoot,
+            //Reagent.SpidersSilk,
+            //Reagent.SulfurousAsh);
         public EnergyFieldSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

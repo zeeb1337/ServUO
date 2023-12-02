@@ -8,10 +8,10 @@ namespace Server.Spells.First
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Create Food", "In Mani Ylem",
             224,
-            9011,
-            Reagent.Garlic,
-            Reagent.Ginseng,
-            Reagent.MandrakeRoot);
+            9011);
+            //Reagent.Garlic,
+            //Reagent.Ginseng,
+            //Reagent.MandrakeRoot);
         private static readonly FoodInfo[] m_Food = new FoodInfo[]
         {
             new FoodInfo(typeof(Grapes), "a grape bunch"),

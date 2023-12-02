@@ -9,10 +9,10 @@ namespace Server.Spells.Eighth
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Resurrection", "An Corp",
             245,
-            9062,
-            Reagent.Bloodmoss,
-            Reagent.Garlic,
-            Reagent.Ginseng);
+            9062);
+            //Reagent.Bloodmoss,
+            //Reagent.Garlic,
+            //Reagent.Ginseng);
         public ResurrectionSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

@@ -17,11 +17,11 @@ namespace Server.Spells.Seventh
             "Meteor Swarm", "Flam Kal Des Ylem",
             233,
             9042,
-            false,
-            Reagent.Bloodmoss,
-            Reagent.MandrakeRoot,
-            Reagent.SulfurousAsh,
-            Reagent.SpidersSilk);
+            false);
+            //Reagent.Bloodmoss,
+            //Reagent.MandrakeRoot,
+            //Reagent.SulfurousAsh,
+            //Reagent.SpidersSilk);
 
         public MeteorSwarmSpell(Mobile caster, Item scroll, Item item)
             : base(caster, scroll, m_Info)

@@ -10,13 +10,12 @@ namespace Server.Spells.SkillMasteries
     public class EtherealBurstSpell : SkillMasterySpell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Ethereal Blast", "Uus Ort Grav",
-				-1,
-				9002,
-                Reagent.Bloodmoss,
-                Reagent.Ginseng,
-                Reagent.MandrakeRoot
-			);
+			"Ethereal Blast", "Uus Ort Grav",
+			-1,
+			9002);
+            //Reagent.Bloodmoss,
+            //Reagent.Ginseng,
+            //Reagent.MandrakeRoot);
 
 		public override double RequiredSkill{ get { return 90; } }
 		public override double UpKeep { get { return 0; } }

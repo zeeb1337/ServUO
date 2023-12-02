@@ -21,13 +21,12 @@ namespace Server.Spells.Mysticism
         public AosWeaponAttribute Attribute { get; set; }
 
 		private static SpellInfo m_Info = new SpellInfo(
-                "Enchant", "In Ort Ylem",
-				230,
-				9022,
-				Reagent.SpidersSilk,
-				Reagent.MandrakeRoot,
-				Reagent.SulfurousAsh
-			);
+            "Enchant", "In Ort Ylem",
+			230,
+			9022);
+			//Reagent.SpidersSilk,
+			//Reagent.MandrakeRoot,
+			//Reagent.SulfurousAsh);
 
 		public EnchantSpell( Mobile caster, Item scroll ) : base( caster, scroll, m_Info )
 		{

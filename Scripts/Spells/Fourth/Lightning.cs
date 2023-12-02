@@ -9,9 +9,9 @@ namespace Server.Spells.Fourth
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Lightning", "Por Ort Grav",
             239,
-            9021,
-            Reagent.MandrakeRoot,
-            Reagent.SulfurousAsh);
+            9021);
+            //Reagent.MandrakeRoot,
+            //Reagent.SulfurousAsh);
         public LightningSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

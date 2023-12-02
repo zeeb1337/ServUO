@@ -9,10 +9,10 @@ namespace Server.Spells.Eighth
             "Earth Elemental", "Kal Vas Xen Ylem",
             269,
             9020,
-            false,
-            Reagent.Bloodmoss,
-            Reagent.MandrakeRoot,
-            Reagent.SpidersSilk);
+            false);
+            //Reagent.Bloodmoss,
+            //Reagent.MandrakeRoot,
+            //Reagent.SpidersSilk);
         public EarthElementalSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

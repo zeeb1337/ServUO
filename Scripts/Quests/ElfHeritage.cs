@@ -5,7 +5,7 @@ using Server.Mobiles;
 namespace Server.Engines.Quests
 {
     public class TheJoysOfLifeQuest : BaseQuest
-    { 
+    {
         public TheJoysOfLifeQuest()
             : base()
         { 

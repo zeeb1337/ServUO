@@ -9,9 +9,9 @@ namespace Server.Spells.Third
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Bless", "Rel Sanct",
             203,
-            9061,
-            Reagent.Garlic,
-            Reagent.MandrakeRoot);
+            9061);
+            //Reagent.Garlic,
+            //Reagent.MandrakeRoot);
 
         private static Dictionary<Mobile, InternalTimer> _Table;
 

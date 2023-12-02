@@ -11,10 +11,10 @@ namespace Server.Spells.Fifth
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Incognito", "Kal In Ex",
             206,
-            9002,
-            Reagent.Bloodmoss,
-            Reagent.Garlic,
-            Reagent.Nightshade);
+            9002);
+            //Reagent.Bloodmoss,
+            //Reagent.Garlic,
+            //Reagent.Nightshade);
         private static readonly Hashtable m_Timers = new Hashtable();
         private static readonly int[] m_HairIDs = new int[]
         {

@@ -10,10 +10,10 @@ namespace Server.Spells.First
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Heal", "In Mani",
             224,
-            9061,
-            Reagent.Garlic,
-            Reagent.Ginseng,
-            Reagent.SpidersSilk);
+            9061);
+            //Reagent.Garlic,
+            //Reagent.Ginseng,
+            //Reagent.SpidersSilk);
         public HealSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

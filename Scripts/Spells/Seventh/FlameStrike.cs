@@ -8,9 +8,9 @@ namespace Server.Spells.Seventh
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Flame Strike", "Kal Vas Flam",
             245,
-            9042,
-            Reagent.SpidersSilk,
-            Reagent.SulfurousAsh);
+            9042);
+            //Reagent.SpidersSilk,
+            //Reagent.SulfurousAsh);
         public FlameStrikeSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

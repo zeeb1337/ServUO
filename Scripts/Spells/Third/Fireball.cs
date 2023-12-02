@@ -8,8 +8,8 @@ namespace Server.Spells.Third
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Fireball", "Vas Flam",
             203,
-            9041,
-            Reagent.BlackPearl);
+            9041);
+            //Reagent.BlackPearl);
         public FireballSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

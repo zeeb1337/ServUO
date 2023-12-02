@@ -9,10 +9,11 @@ namespace Server.Spells.Necromancy
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Vengeful Spirit", "Kal Xen Bal Beh",
             203,
-            9031,
-            Reagent.BatWing,
-            Reagent.GraveDust,
-            Reagent.PigIron);
+            9031);
+            //Reagent.BatWing,
+            //Reagent.GraveDust,
+            //Reagent.PigIron);
+
         public VengefulSpiritSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

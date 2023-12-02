@@ -10,9 +10,9 @@ namespace Server.Spells.Third
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Teleport", "Rel Por",
             215,
-            9031,
-            Reagent.Bloodmoss,
-            Reagent.MandrakeRoot);
+            9031);
+            //Reagent.Bloodmoss,
+            //Reagent.MandrakeRoot);
         public TeleportSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

@@ -8,11 +8,11 @@ namespace Server.Spells.Fifth
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Mind Blast", "Por Corp Wis",
             218,
-            Core.AOS ? 9002 : 9032,
-            Reagent.BlackPearl,
-            Reagent.MandrakeRoot,
-            Reagent.Nightshade,
-            Reagent.SulfurousAsh);
+            Core.AOS ? 9002 : 9032);
+            //Reagent.BlackPearl,
+            //Reagent.MandrakeRoot,
+            //Reagent.Nightshade,
+            //Reagent.SulfurousAsh);
         public MindBlastSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

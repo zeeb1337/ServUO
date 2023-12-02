@@ -9,10 +9,10 @@ namespace Server.Spells.Second
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Magic Trap", "In Jux",
             212,
-            9001,
-            Reagent.Garlic,
-            Reagent.SpidersSilk,
-            Reagent.SulfurousAsh);
+            9001);
+            //Reagent.Garlic,
+            //Reagent.SpidersSilk,
+            //Reagent.SulfurousAsh);
         public MagicTrapSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

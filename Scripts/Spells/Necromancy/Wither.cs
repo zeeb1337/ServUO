@@ -14,10 +14,11 @@ namespace Server.Spells.Necromancy
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Wither", "Kal Vas An Flam",
             203,
-            9031,
-            Reagent.NoxCrystal,
-            Reagent.GraveDust,
-            Reagent.PigIron);
+            9031);
+            //Reagent.NoxCrystal,
+            //Reagent.GraveDust,
+            //Reagent.PigIron);
+
         public WitherSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

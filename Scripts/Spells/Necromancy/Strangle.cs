@@ -10,9 +10,10 @@ namespace Server.Spells.Necromancy
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Strangle", "In Bal Nox",
             209,
-            9031,
-            Reagent.DaemonBlood,
-            Reagent.NoxCrystal);
+            9031);
+            //Reagent.DaemonBlood,
+            //Reagent.NoxCrystal);
+
         private static readonly Hashtable m_Table = new Hashtable();
         public StrangleSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)

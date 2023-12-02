@@ -10,10 +10,10 @@ namespace Server.Spells.Sixth
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Dispel", "An Ort",
             218,
-            9002,
-            Reagent.Garlic,
-            Reagent.MandrakeRoot,
-            Reagent.SulfurousAsh);
+            9002);
+            //Reagent.Garlic,
+            //Reagent.MandrakeRoot,
+            //Reagent.SulfurousAsh);
         public DispelSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

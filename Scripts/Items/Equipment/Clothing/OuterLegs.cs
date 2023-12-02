@@ -86,7 +86,7 @@ namespace Server.Items
         public Skirt(int hue)
             : base(0x1516, hue)
         {
-            this.Weight = 4.0;
+            this.Weight = 2.0;
         }
 
         public Skirt(Serial serial)

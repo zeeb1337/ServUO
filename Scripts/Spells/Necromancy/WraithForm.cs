@@ -9,9 +9,10 @@ namespace Server.Spells.Necromancy
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Wraith Form", "Rel Xen Um",
             203,
-            9031,
-            Reagent.NoxCrystal,
-            Reagent.PigIron);
+            9031);
+            //Reagent.NoxCrystal,
+            //Reagent.PigIron);
+
         public WraithFormSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

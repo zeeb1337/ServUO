@@ -10,10 +10,10 @@ namespace Server.Spells.Fifth
             "Blade Spirits", "In Jux Hur Ylem",
             266,
             9040,
-            false,
-            Reagent.BlackPearl,
-            Reagent.MandrakeRoot,
-            Reagent.Nightshade);
+            false);
+            //Reagent.BlackPearl,
+            //Reagent.MandrakeRoot,
+            //Reagent.Nightshade);
         public BladeSpiritsSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

@@ -15,11 +15,11 @@ namespace Server.Spells.Seventh
             "Chain Lightning", "Vas Ort Grav",
             209,
             9022,
-            false,
-            Reagent.BlackPearl,
-            Reagent.Bloodmoss,
-            Reagent.MandrakeRoot,
-            Reagent.SulfurousAsh);
+            false);
+            //Reagent.BlackPearl,
+            //Reagent.Bloodmoss,
+            //Reagent.MandrakeRoot,
+            //Reagent.SulfurousAsh);
         public ChainLightningSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

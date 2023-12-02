@@ -8,12 +8,11 @@ namespace Server.Spells.Mysticism
         public override SpellCircle Circle { get { return SpellCircle.First; } }
 
         private static SpellInfo m_Info = new SpellInfo(
-                "Nether Bolt", "In Corp Ylem",
-                230,
-                9022,
-                Reagent.BlackPearl,
-                Reagent.SulfurousAsh
-            );
+            "Nether Bolt", "In Corp Ylem",
+            230,
+            9022);
+            //Reagent.BlackPearl,
+            //Reagent.SulfurousAsh);
 
         public NetherBoltSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
         {

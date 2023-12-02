@@ -10,11 +10,11 @@ namespace Server.Spells.Fourth
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Arch Protection", "Vas Uus Sanct",
             Core.AOS ? 239 : 215,
-            9011,
-            Reagent.Garlic,
-            Reagent.Ginseng,
-            Reagent.MandrakeRoot,
-            Reagent.SulfurousAsh);
+            9011);
+            //Reagent.Garlic,
+            //Reagent.Ginseng,
+            //Reagent.MandrakeRoot,
+            //Reagent.SulfurousAsh);
         public ArchProtectionSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

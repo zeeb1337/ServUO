@@ -8,9 +8,9 @@ namespace Server.Spells.Sixth
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Energy Bolt", "Corp Por",
             230,
-            9022,
-            Reagent.BlackPearl,
-            Reagent.Nightshade);
+            9022);
+            //Reagent.BlackPearl,
+            //Reagent.Nightshade);
         public EnergyBoltSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

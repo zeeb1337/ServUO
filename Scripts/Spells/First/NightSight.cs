@@ -8,9 +8,9 @@ namespace Server.Spells.First
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Night Sight", "In Lor",
             236,
-            9031,
-            Reagent.SulfurousAsh,
-            Reagent.SpidersSilk);
+            9031);
+            //Reagent.SulfurousAsh,
+            //Reagent.SpidersSilk);
         public NightSightSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

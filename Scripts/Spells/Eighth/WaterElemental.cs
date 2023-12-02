@@ -9,10 +9,10 @@ namespace Server.Spells.Eighth
             "Water Elemental", "Kal Vas Xen An Flam",
             269,
             9070,
-            false,
-            Reagent.Bloodmoss,
-            Reagent.MandrakeRoot,
-            Reagent.SpidersSilk);
+            false);
+            //Reagent.Bloodmoss,
+            //Reagent.MandrakeRoot,
+            //Reagent.SpidersSilk);
         public WaterElementalSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

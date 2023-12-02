@@ -14,9 +14,10 @@ namespace Server.Spells.Necromancy
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Exorcism", "Ort Corp Grav",
             203,
-            9031,
-            Reagent.NoxCrystal,
-            Reagent.GraveDust);
+            9031);
+            //Reagent.NoxCrystal,
+            //Reagent.GraveDust);
+
         private static readonly int Range = (Core.ML ? 48 : 18);
         private static readonly Point3D[] m_BritanniaLocs = new Point3D[]
         {

@@ -15,9 +15,9 @@ namespace Server.Spells.Third
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Unlock Spell", "Ex Por",
             215,
-            9001,
-            Reagent.Bloodmoss,
-            Reagent.SulfurousAsh);
+            9001);
+            //Reagent.Bloodmoss,
+            //Reagent.SulfurousAsh);
         public UnlockSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

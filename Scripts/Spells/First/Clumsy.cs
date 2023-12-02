@@ -9,9 +9,9 @@ namespace Server.Spells.First
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Clumsy", "Uus Jux",
             212,
-            9031,
-            Reagent.Bloodmoss,
-            Reagent.Nightshade);
+            9031);
+            //Reagent.Bloodmoss,
+            //Reagent.Nightshade);
         public ClumsySpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

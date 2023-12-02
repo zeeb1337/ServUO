@@ -8,10 +8,10 @@ namespace Server.Spells.First
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Reactive Armor", "Flam Sanct",
             236,
-            9011,
-            Reagent.Garlic,
-            Reagent.SpidersSilk,
-            Reagent.SulfurousAsh);
+            9011);
+            //Reagent.Garlic,
+            //Reagent.SpidersSilk,
+            //Reagent.SulfurousAsh);
         private static readonly Hashtable m_Table = new Hashtable();
         public ReactiveArmorSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)

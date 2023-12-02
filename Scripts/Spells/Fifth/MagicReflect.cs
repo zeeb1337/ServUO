@@ -8,10 +8,10 @@ namespace Server.Spells.Fifth
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Magic Reflection", "In Jux Sanct",
             242,
-            9012,
-            Reagent.Garlic,
-            Reagent.MandrakeRoot,
-            Reagent.SpidersSilk);
+            9012);
+            //Reagent.Garlic,
+            //Reagent.MandrakeRoot,
+            //Reagent.SpidersSilk);
         private static readonly Hashtable m_Table = new Hashtable();
         public MagicReflectSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)

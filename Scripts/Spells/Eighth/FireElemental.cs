@@ -9,11 +9,11 @@ namespace Server.Spells.Eighth
             "Fire Elemental", "Kal Vas Xen Flam",
             269,
             9050,
-            false,
-            Reagent.Bloodmoss,
-            Reagent.MandrakeRoot,
-            Reagent.SpidersSilk,
-            Reagent.SulfurousAsh);
+            false);
+            //Reagent.Bloodmoss,
+            //Reagent.MandrakeRoot,
+            //Reagent.SpidersSilk,
+            //Reagent.SulfurousAsh);
         public FireElementalSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

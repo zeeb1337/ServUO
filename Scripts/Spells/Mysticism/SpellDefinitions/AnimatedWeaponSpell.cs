@@ -9,14 +9,13 @@ namespace Server.Spells.Mysticism
         public override SpellCircle Circle { get { return SpellCircle.Fourth; } }
 
         private static SpellInfo m_Info = new SpellInfo(
-                "Animated Weapon", "In Jux Por Ylem",
-                230,
-                9022,
-                Reagent.BlackPearl,
-                Reagent.MandrakeRoot,
-                Reagent.Nightshade,
-                Reagent.Bone
-            );
+            "Animated Weapon", "In Jux Por Ylem",
+            230,
+            9022);
+            //Reagent.BlackPearl,
+            //Reagent.MandrakeRoot,
+            //Reagent.Nightshade,
+            //Reagent.Bone);
 
         public AnimatedWeaponSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
         {

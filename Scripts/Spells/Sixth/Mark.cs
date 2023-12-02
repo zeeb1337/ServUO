@@ -11,10 +11,10 @@ namespace Server.Spells.Sixth
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Mark", "Kal Por Ylem",
             218,
-            9002,
-            Reagent.BlackPearl,
-            Reagent.Bloodmoss,
-            Reagent.MandrakeRoot);
+            9002);
+            //Reagent.BlackPearl,
+            //Reagent.Bloodmoss,
+            //Reagent.MandrakeRoot);
         public MarkSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

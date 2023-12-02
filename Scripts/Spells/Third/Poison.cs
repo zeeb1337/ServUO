@@ -8,8 +8,8 @@ namespace Server.Spells.Third
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Poison", "In Nox",
             203,
-            9051,
-            Reagent.Nightshade);
+            9051);
+            //Reagent.Nightshade);
 
         public override SpellCircle Circle
         {

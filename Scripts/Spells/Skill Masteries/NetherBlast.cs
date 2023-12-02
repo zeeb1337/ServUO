@@ -13,12 +13,11 @@ namespace Server.Spells.SkillMasteries
     public class NetherBlastSpell : SkillMasterySpell
     {
         private static SpellInfo m_Info = new SpellInfo(
-                "Nether Blast", "In Vas Por Grav",
-                204,
-				9061,
-                Reagent.DragonBlood,
-                Reagent.DaemonBone
-            );
+			"Nether Blast", "In Vas Por Grav",
+            204,
+			9061);
+            //Reagent.DragonBlood,
+            //Reagent.DaemonBone);
 
         public override double RequiredSkill { get { return 90; } }
         public override double UpKeep { get { return 0; } }

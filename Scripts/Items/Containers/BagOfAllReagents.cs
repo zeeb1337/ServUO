@@ -6,7 +6,7 @@ namespace Server.Items
     {
         [Constructable]
         public BagOfAllReagents()
-            : this(50)
+            : this(5)
         {
         }
 

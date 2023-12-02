@@ -9,9 +9,9 @@ namespace Server.Spells.Third
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Telekinesis", "Ort Por Ylem",
             203,
-            9031,
-            Reagent.Bloodmoss,
-            Reagent.MandrakeRoot);
+            9031);
+            //Reagent.Bloodmoss,
+            //Reagent.MandrakeRoot);
         public TelekinesisSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

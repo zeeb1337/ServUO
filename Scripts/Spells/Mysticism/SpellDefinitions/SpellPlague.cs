@@ -8,14 +8,13 @@ namespace Server.Spells.Mysticism
     public class SpellPlagueSpell : MysticSpell
     {
         private static SpellInfo m_Info = new SpellInfo(
-                "Spell Plague", "Vas Rel Jux Ort",
-                230,
-                9022,
-                Reagent.DaemonBone,
-                Reagent.DragonBlood,
-                Reagent.Nightshade,
-                Reagent.SulfurousAsh
-            );
+            "Spell Plague", "Vas Rel Jux Ort",
+            230,
+            9022);
+            //Reagent.DaemonBone,
+            //Reagent.DragonBlood,
+            //Reagent.Nightshade,
+            //Reagent.SulfurousAsh);
 
         public override SpellCircle Circle { get { return SpellCircle.Seventh; } }
 

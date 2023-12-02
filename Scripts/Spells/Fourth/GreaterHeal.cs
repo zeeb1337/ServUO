@@ -10,11 +10,11 @@ namespace Server.Spells.Fourth
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Greater Heal", "In Vas Mani",
             204,
-            9061,
-            Reagent.Garlic,
-            Reagent.Ginseng,
-            Reagent.MandrakeRoot,
-            Reagent.SpidersSilk);
+            9061);
+            //Reagent.Garlic,
+            //Reagent.Ginseng,
+            //Reagent.MandrakeRoot,
+            //Reagent.SpidersSilk);
         public GreaterHealSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

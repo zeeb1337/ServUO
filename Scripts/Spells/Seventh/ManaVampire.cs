@@ -8,11 +8,11 @@ namespace Server.Spells.Seventh
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Mana Vampire", "Ort Sanct",
             221,
-            9032,
-            Reagent.BlackPearl,
-            Reagent.Bloodmoss,
-            Reagent.MandrakeRoot,
-            Reagent.SpidersSilk);
+            9032);
+            //Reagent.BlackPearl,
+            //Reagent.Bloodmoss,
+            //Reagent.MandrakeRoot,
+            //Reagent.SpidersSilk);
         public ManaVampireSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

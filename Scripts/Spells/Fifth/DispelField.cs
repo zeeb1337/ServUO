@@ -10,11 +10,11 @@ namespace Server.Spells.Fifth
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Dispel Field", "An Grav",
             206,
-            9002,
-            Reagent.BlackPearl,
-            Reagent.SpidersSilk,
-            Reagent.SulfurousAsh,
-            Reagent.Garlic);
+            9002);
+            //Reagent.BlackPearl,
+            //Reagent.SpidersSilk,
+            //Reagent.SulfurousAsh,
+            //Reagent.Garlic);
         public DispelFieldSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

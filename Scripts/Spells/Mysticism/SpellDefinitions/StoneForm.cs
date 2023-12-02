@@ -14,13 +14,12 @@ namespace Server.Spells.Mysticism
 		}
 
 		private static SpellInfo m_Info = new SpellInfo(
-				"Stone Form", "In Rel Ylem",
-				230,
-				9022,
-				Reagent.Bloodmoss,
-				Reagent.FertileDirt,
-				Reagent.Garlic
-			);
+			"Stone Form", "In Rel Ylem",
+			230,
+			9022);
+			//Reagent.Bloodmoss,
+			//Reagent.FertileDirt,
+			//Reagent.Garlic);
 
         private int m_ResisMod;
 
