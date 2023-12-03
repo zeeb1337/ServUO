@@ -217,12 +217,12 @@ namespace Server.Misc
 				newChar.FaceHue = newChar.Hue;
 			}
 
-			if (args.Profession <= 3)
-			{
+			//if (args.Profession <= 3)
+			//{
 				AddShirt(newChar, args.ShirtHue);
 				AddPants(newChar, args.PantsHue);
 				AddShoes(newChar);
-			}
+			//}
 
 			if (TestCenter.Enabled)
 				TestCenter.FillBankbox(newChar);
@@ -353,50 +353,50 @@ namespace Server.Misc
             {
                 case 1: // Warrior
                     {
-                        str = 45;
-                        dex = 35;
+                        str = 60;
+                        dex = 20;
                         intel = 10;
                         break;
                     }
                 case 2: // Magician
                     {
-                        str = 25;
-                        dex = 20;
-                        intel = 45;
+                        str = 20;
+                        dex = 10;
+                        intel = 60;
                         break;
                     }
                 case 3: // Blacksmith
                     {
                         str = 60;
-                        dex = 15;
-                        intel = 15;
+                        dex = 20;
+                        intel = 10;
                         break;
                     }
                 case 4: // Necromancer
                     {
-                        str = 25;
-                        dex = 20;
-                        intel = 45;
+                        str = 20;
+                        dex = 10;
+                        intel = 60;
                         break;
                     }
                 case 5: // Paladin
                     {
-                        str = 45;
-                        dex = 20;
-                        intel = 25;
+                        str = 60;
+                        dex = 10;
+                        intel = 20;
                         break;
                     }
                 case 6: //Samurai
                     {
-                        str = 40;
-                        dex = 30;
-                        intel = 20;
+                        str = 60;
+                        dex = 20;
+                        intel = 10;
                         break;
                     }
                 case 7: //Ninja
                     {
-                        str = 40;
-                        dex = 30;
+                        str = 10;
+                        dex = 60;
                         intel = 20;
                         break;
                     }
@@ -430,7 +430,7 @@ namespace Server.Misc
 					skills = new[]
 					{
 						new SkillNameValue(SkillName.Magery, 30), new SkillNameValue(SkillName.EvalInt, 30),
-						new SkillNameValue(SkillName.Meditation, 30), new SkillNameValue(SkillName.Wrestling, 30)
+						new SkillNameValue(SkillName.Meditation, 30), new SkillNameValue(SkillName.MagicResist, 30)
 					};
 
 					break;
@@ -450,7 +450,7 @@ namespace Server.Misc
 					skills = new[]
 					{
 						new SkillNameValue(SkillName.Necromancy, 30), new SkillNameValue(SkillName.SpiritSpeak, 30),
-						new SkillNameValue(SkillName.Meditation, 30), new SkillNameValue(SkillName.Wrestling, 30)
+						new SkillNameValue(SkillName.Meditation, 30), new SkillNameValue(SkillName.MagicResist, 30)
 					};
 
 					break;
@@ -621,8 +621,6 @@ namespace Server.Misc
 					PackItem(new MortarPestle());
 					PackItem(new BagOfAllReagents());
 
-					EquipItem(new Robe(Utility.RandomPinkHue()));
-
 					break;
 				}
 				case SkillName.Anatomy:
@@ -633,9 +631,13 @@ namespace Server.Misc
 				}
 				case SkillName.AnimalLore:
 				{
-					EquipItem(new ShepherdsCrook());
-
 					EquipItem(new Robe(Utility.RandomGreenHue()));
+
+					break;
+				}
+				case SkillName.AnimalTaming:
+				{
+					PackItem(new BreadLoaf());
 
 					break;
 				}
@@ -666,7 +668,7 @@ namespace Server.Misc
 				case SkillName.Blacksmith:
 				{
 					PackItem(new Tongs());
-					PackItem(new Pickaxe());
+					EquipItem(new Pickaxe());
 
 					EquipItem(new HalfApron(Utility.RandomYellowHue()));
 
@@ -677,7 +679,8 @@ namespace Server.Misc
 					EquipItem(new Hakama());
 					EquipItem(new Kasa());
 
-					EquipItem(new BookOfBushido());
+					PackItem(new BookOfBushido());
+					EquipItem(new Wakizashi());
 
 					break;
 				}
@@ -685,6 +688,12 @@ namespace Server.Misc
 				{
 					PackItem(new Feather(10));
 					PackItem(new Shaft(10));
+
+					break;
+				}
+				case SkillName.Focus:
+				{
+					PackItem(new FishSteak());
 
 					break;
 				}
@@ -707,9 +716,6 @@ namespace Server.Misc
 				case SkillName.Cartography:
 				{
 					PackItem(new BlankMap());
-					PackItem(new BlankMap());
-					PackItem(new BlankMap());
-					PackItem(new BlankMap());
 					PackItem(new Sextant());
 
 					break;
@@ -717,9 +723,6 @@ namespace Server.Misc
 				case SkillName.Cooking:
 				{
 					PackItem(new Kindling(5));
-					PackItem(new RawLambLeg());
-					PackItem(new RawChickenLeg());
-					PackItem(new RawFishSteak());
 					PackItem(new SackFlour());
 					PackItem(new Pitcher(BeverageType.Water));
 
@@ -734,13 +737,19 @@ namespace Server.Misc
 				}
 				case SkillName.DetectHidden:
 				{
-					EquipItem(new Cloak(0x455));
+					EquipItem(new Spyglass());
 
 					break;
 				}
 				case SkillName.Discordance:
 				{
 					PackInstrument();
+
+					break;
+				}
+				case SkillName.EvalInt:
+				{
+					EquipItem(new Cloak(Utility.RandomBlueHue()));
 
 					break;
 				}
@@ -755,6 +764,12 @@ namespace Server.Misc
 					EquipItem(new FishingPole());
 
 					EquipItem(new FloppyHat(Utility.RandomYellowHue()));
+
+					break;
+				}
+				case SkillName.Forensics:
+				{
+					PackItem(new DisguiseKit());
 
 					break;
 				}
@@ -777,10 +792,16 @@ namespace Server.Misc
 
 					break;
 				}
+				case SkillName.Imbuing:
+				{
+					PackItem(new MagicalResidue());
+
+					break;
+				}
 				case SkillName.Inscribe:
 				{
 					PackItem(new BlankScroll(5));
-					PackItem(new BlueBook());
+					PackItem(new ScribesPen());
 					
 					PackScroll(0);
 
@@ -788,7 +809,7 @@ namespace Server.Misc
 				}
 				case SkillName.ItemID:
 				{
-					EquipItem(new GnarledStaff());
+					EquipItem(new IDWand());
 
 					break;
 				}
@@ -814,8 +835,19 @@ namespace Server.Misc
 				{
 					PackItem(new Spellbook((ulong)0x382A8C38));
 
-					EquipItem(new WizardsHat(Utility.RandomBlueHue()));
 					EquipItem(new Robe(Utility.RandomBlueHue()));
+
+					break;
+				}
+				case SkillName.MagicResist:
+				{
+					EquipItem(new WizardsHat());
+
+					break;
+				}
+				case SkillName.Meditation:
+				{
+					PackItem(new CheeseWheel());
 
 					break;
 				}
@@ -836,17 +868,17 @@ namespace Server.Misc
 				{
 					PackItem(new NecromancerSpellbook((ulong)0x8981));
 
-					EquipItem(new WizardsHat(Utility.RandomRedHue()));
 					EquipItem(new Robe(Utility.RandomRedHue()));
 
 					break;
 				}
 				case SkillName.Ninjitsu:
 				{
-					EquipItem(new Hakama(0x2C3)); //Only ninjas get the hued one.
-					EquipItem(new Kasa());
+					EquipItem(new Hakama(0x455)); //Only ninjas get the hued one.
+					EquipItem(new ClothNinjaHood(0x2C3));
 
-					EquipItem(new BookOfNinjitsu());
+					PackItem(new BookOfNinjitsu());
+					PackItem(new SmokeBomb());
 
 					break;
 				}
@@ -864,7 +896,7 @@ namespace Server.Misc
 				}
 				case SkillName.Poisoning:
 				{
-					PackItem(new LesserPoisonPotion(5));
+					PackItem(new LesserPoisonPotion(10));
 
 					break;
 				}
@@ -874,15 +906,15 @@ namespace Server.Misc
 
 					break;
 				}
-				case SkillName.Snooping:
+				case SkillName.RemoveTrap:
 				{
 					PackItem(new Lockpick(5));
 
 					break;
 				}
-				case SkillName.EvalInt:
+				case SkillName.Snooping:
 				{
-					EquipItem(new Cloak(Utility.RandomBlueHue()));
+					PackItem(new Lockpick(5));
 
 					break;
 				}
@@ -894,7 +926,13 @@ namespace Server.Misc
 				}
 				case SkillName.Stealing:
 				{
-					PackItem(new Lockpick(5));
+					EquipItem(new LeatherGloves(0x455));
+
+					break;
+				}
+				case SkillName.Stealth:
+				{
+					EquipItem(new Robe(0x455));
 
 					break;
 				}
@@ -914,6 +952,12 @@ namespace Server.Misc
 				{
 					PackItem(new BoltOfCloth());
 					PackItem(new SewingKit());
+
+					break;
+				}
+				case SkillName.TasteID:
+				{
+					PackItem(new LesserPoisonPotion(5));
 
 					break;
 				}
@@ -957,7 +1001,6 @@ namespace Server.Misc
 				{
 					PackItem(new MysticBook((ulong)0xAB));
 
-					EquipItem(new WizardsHat());
 					EquipItem(new Robe());
 
 					break;
