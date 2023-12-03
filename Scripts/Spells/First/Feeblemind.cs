@@ -9,9 +9,9 @@ namespace Server.Spells.First
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Feeblemind", "Rel Wis",
             212,
-            9031);
-            //Reagent.Ginseng,
-            //Reagent.Nightshade);
+            9031,
+            Reagent.Ginseng,
+            Reagent.Nightshade);
         public FeeblemindSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

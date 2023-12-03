@@ -10,11 +10,10 @@ namespace Server.Spells.Necromancy
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Mind Rot", "Wis An Ben",
             203,
-            9031);
-            //Reagent.BatWing,
-            //Reagent.PigIron,
-            //Reagent.DaemonBlood);
-
+            9031,
+            Reagent.BatWing,
+            Reagent.PigIron,
+            Reagent.DaemonBlood);
         private static readonly Hashtable m_Table = new Hashtable();
         public MindRotSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)

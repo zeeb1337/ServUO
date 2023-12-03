@@ -7,10 +7,9 @@ namespace Server.Spells.Necromancy
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Horrific Beast", "Rel Xen Vas Bal",
             203,
-            9031);
-            //Reagent.BatWing,
-            //Reagent.DaemonBlood);
-
+            9031,
+            Reagent.BatWing,
+            Reagent.DaemonBlood);
         public HorrificBeastSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

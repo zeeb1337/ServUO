@@ -8,9 +8,9 @@ namespace Server.Spells.Second
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Harm", "An Mani",
             212,
-            Core.AOS ? 9001 : 9041);
-            //Reagent.Nightshade,
-            //Reagent.SpidersSilk);
+            Core.AOS ? 9001 : 9041,
+            Reagent.Nightshade,
+            Reagent.SpidersSilk);
         public HarmSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

@@ -12,9 +12,9 @@ namespace Server.Spells.Necromancy
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Pain Spike", "In Sar",
             203,
-            9031);
-            //Reagent.GraveDust,
-            //Reagent.PigIron);
+            9031,
+            Reagent.GraveDust,
+            Reagent.PigIron);
 
         private static readonly Dictionary<Mobile, InternalTimer> m_Table = new Dictionary<Mobile, InternalTimer>();
 

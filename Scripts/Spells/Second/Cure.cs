@@ -8,9 +8,9 @@ namespace Server.Spells.Second
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Cure", "An Nox",
             212,
-            9061);
-            //Reagent.Garlic,
-            //Reagent.Ginseng);
+            9061,
+            Reagent.Garlic,
+            Reagent.Ginseng);
         public CureSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

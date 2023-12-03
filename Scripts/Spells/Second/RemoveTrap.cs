@@ -9,9 +9,9 @@ namespace Server.Spells.Second
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Remove Trap", "An Jux",
             212,
-            9001);
-            //Reagent.Bloodmoss,
-            //Reagent.SulfurousAsh);
+            9001,
+            Reagent.Bloodmoss,
+            Reagent.SulfurousAsh);
         public RemoveTrapSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

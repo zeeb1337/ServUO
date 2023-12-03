@@ -10,10 +10,10 @@ namespace Server.Spells.Fourth
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Curse", "Des Sanct",
             227,
-            9031);
-            //Reagent.Nightshade,
-            //Reagent.Garlic,
-            //Reagent.SulfurousAsh);
+            9031,
+            Reagent.Nightshade,
+            Reagent.Garlic,
+            Reagent.SulfurousAsh);
 
         private static readonly Dictionary<Mobile, Timer> m_UnderEffect = new Dictionary<Mobile, Timer>();
 

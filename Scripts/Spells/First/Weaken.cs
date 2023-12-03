@@ -9,9 +9,9 @@ namespace Server.Spells.First
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Weaken", "Des Mani",
             212,
-            9031);
-            //Reagent.Garlic,
-            //Reagent.Nightshade);
+            9031,
+            Reagent.Garlic,
+            Reagent.Nightshade);
 
         public static Dictionary<Mobile, Timer> m_Table = new Dictionary<Mobile, Timer>();
 

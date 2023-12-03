@@ -10,11 +10,11 @@ namespace Server.Spells.Eighth
             "Energy Vortex", "Vas Corp Por",
             260,
             9032,
-            false);
-            //Reagent.Bloodmoss,
-            //Reagent.BlackPearl,
-            //Reagent.MandrakeRoot,
-            //Reagent.Nightshade);
+            false,
+            Reagent.Bloodmoss,
+            Reagent.BlackPearl,
+            Reagent.MandrakeRoot,
+            Reagent.Nightshade);
         public EnergyVortexSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

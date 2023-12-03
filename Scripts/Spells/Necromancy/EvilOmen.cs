@@ -11,9 +11,9 @@ namespace Server.Spells.Necromancy
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Evil Omen", "Pas Tym An Sanct",
             203,
-            9031);
-            //Reagent.BatWing,
-            //Reagent.NoxCrystal);
+            9031,
+            Reagent.BatWing,
+            Reagent.NoxCrystal);
 
         private static readonly Dictionary<Mobile, double> m_Table = new Dictionary<Mobile, double>();
 

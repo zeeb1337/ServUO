@@ -10,10 +10,10 @@ namespace Server.Spells.Third
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Magic Lock", "An Por",
             215,
-            9001);
-            //Reagent.Garlic,
-            //Reagent.Bloodmoss,
-            //Reagent.SulfurousAsh);
+            9001,
+            Reagent.Garlic,
+            Reagent.Bloodmoss,
+            Reagent.SulfurousAsh);
         public MagicLockSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

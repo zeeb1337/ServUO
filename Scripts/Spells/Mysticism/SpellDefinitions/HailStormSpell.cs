@@ -17,13 +17,14 @@ namespace Server.Spells.Mysticism
         public override DamageType SpellDamageType { get { return DamageType.SpellAOE; } }
 
         private static SpellInfo m_Info = new SpellInfo(
-            "Hail Storm", "Kal Des Ylem",
-            230,
-            9022);
-            //Reagent.BlackPearl,
-            //Reagent.Bloodmoss,
-            //Reagent.MandrakeRoot,
-            //Reagent.DragonBlood);
+                "Hail Storm", "Kal Des Ylem",
+                230,
+                9022,
+                Reagent.BlackPearl,
+                Reagent.Bloodmoss,
+                Reagent.MandrakeRoot,
+                Reagent.DragonBlood
+            );
 
         public HailStormSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)

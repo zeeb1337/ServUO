@@ -8,11 +8,10 @@ namespace Server.Spells.Necromancy
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Lich Form", "Rel Xen Corp Ort",
             203,
-            9031);
-            //Reagent.GraveDust,
-            //Reagent.DaemonBlood,
-            //Reagent.NoxCrystal);
-
+            9031,
+            Reagent.GraveDust,
+            Reagent.DaemonBlood,
+            Reagent.NoxCrystal);
         public LichFormSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

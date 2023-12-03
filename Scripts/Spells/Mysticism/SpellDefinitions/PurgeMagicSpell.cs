@@ -34,13 +34,14 @@ namespace Server.Spells.Mysticism
         public override SpellCircle Circle { get { return SpellCircle.Second; } }
 
         private static SpellInfo m_Info = new SpellInfo(
-            "Purge", "An Ort Sanct ",
-            230,
-            9022);
-            //Reagent.Garlic,
-            //Reagent.MandrakeRoot,
-            //Reagent.SulfurousAsh,
-            //Reagent.FertileDirt);
+                "Purge", "An Ort Sanct ",
+                230,
+                9022,
+                Reagent.Garlic,
+                Reagent.MandrakeRoot,
+                Reagent.SulfurousAsh,
+                Reagent.FertileDirt
+            );
 
         public PurgeMagicSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
         {

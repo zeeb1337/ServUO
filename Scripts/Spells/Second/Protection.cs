@@ -9,10 +9,10 @@ namespace Server.Spells.Second
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Protection", "Uus Sanct",
             236,
-            9011);
-            //Reagent.Garlic,
-            //Reagent.Ginseng,
-            //Reagent.SulfurousAsh);
+            9011,
+            Reagent.Garlic,
+            Reagent.Ginseng,
+            Reagent.SulfurousAsh);
         private static readonly Hashtable m_Table = new Hashtable();
         public ProtectionSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)

@@ -9,8 +9,8 @@ namespace Server.Spells.Necromancy
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Curse Weapon", "An Sanct Gra Char",
             203,
-            9031);
-            //Reagent.PigIron);
+            9031,
+            Reagent.PigIron);
 
         private static readonly Dictionary<Mobile, ExpireTimer> m_Table = new Dictionary<Mobile, ExpireTimer>();
 

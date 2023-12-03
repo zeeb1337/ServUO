@@ -10,12 +10,13 @@ namespace Server.Spells.SkillMasteries
 	public class CommandUndeadSpell : SkillMasterySpell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-			"Command Undead", "In Corp Xen Por",
-			204,
-			9061);
-            //Reagent.DaemonBlood,
-            //Reagent.PigIron,
-            //Reagent.BatWing);
+				"Command Undead", "In Corp Xen Por",
+				204,
+				9061,
+                Reagent.DaemonBlood,
+                Reagent.PigIron,
+                Reagent.BatWing
+			);
 
 		public override double RequiredSkill{ get { return 90; } }
 		public override double UpKeep { get { return 0; } }

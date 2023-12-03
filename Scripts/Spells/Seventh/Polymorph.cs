@@ -11,10 +11,10 @@ namespace Server.Spells.Seventh
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Polymorph", "Vas Ylem Rel",
             221,
-            9002);
-            //Reagent.Bloodmoss,
-            //Reagent.SpidersSilk,
-            //Reagent.MandrakeRoot);
+            9002,
+            Reagent.Bloodmoss,
+            Reagent.SpidersSilk,
+            Reagent.MandrakeRoot);
         private static readonly Hashtable m_Timers = new Hashtable();
         private readonly int m_NewBody;
         public PolymorphSpell(Mobile caster, Item scroll, int body)

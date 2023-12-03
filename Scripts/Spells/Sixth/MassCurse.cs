@@ -13,11 +13,11 @@ namespace Server.Spells.Sixth
             "Mass Curse", "Vas Des Sanct",
             218,
             9031,
-            false);
-            //Reagent.Garlic,
-            //Reagent.Nightshade,
-            //Reagent.MandrakeRoot,
-            //Reagent.SulfurousAsh);
+            false,
+            Reagent.Garlic,
+            Reagent.Nightshade,
+            Reagent.MandrakeRoot,
+            Reagent.SulfurousAsh);
         public MassCurseSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

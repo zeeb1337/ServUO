@@ -8,8 +8,8 @@ namespace Server.Spells.First
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Magic Arrow", "In Por Ylem",
             212,
-            9041);
-            //Reagent.SulfurousAsh);
+            9041,
+            Reagent.SulfurousAsh);
         public MagicArrowSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

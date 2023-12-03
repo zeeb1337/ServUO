@@ -8,9 +8,9 @@ namespace Server.Spells.Sixth
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Explosion", "Vas Ort Flam",
             230,
-            9041);
-            //Reagent.Bloodmoss,
-            //Reagent.MandrakeRoot);
+            9041,
+            Reagent.Bloodmoss,
+            Reagent.MandrakeRoot);
         public ExplosionSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

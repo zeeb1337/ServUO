@@ -11,11 +11,11 @@ namespace Server.Spells.Eighth
             "Earthquake", "In Vas Por",
             233,
             9012,
-            false);
-            //Reagent.Bloodmoss,
-            //Reagent.Ginseng,
-            //Reagent.MandrakeRoot,
-            //Reagent.SulfurousAsh);
+            false,
+            Reagent.Bloodmoss,
+            Reagent.Ginseng,
+            Reagent.MandrakeRoot,
+            Reagent.SulfurousAsh);
 
         public EarthquakeSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)

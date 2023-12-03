@@ -9,10 +9,10 @@ namespace Server.Spells.Fourth
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Mana Drain", "Ort Rel",
             215,
-            9031);
-            //Reagent.BlackPearl,
-            //Reagent.MandrakeRoot,
-            //Reagent.SpidersSilk);
+            9031,
+            Reagent.BlackPearl,
+            Reagent.MandrakeRoot,
+            Reagent.SpidersSilk);
         private static readonly Dictionary<Mobile, Timer> m_Table = new Dictionary<Mobile, Timer>();
         public ManaDrainSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)

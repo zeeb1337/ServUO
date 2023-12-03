@@ -8,9 +8,9 @@ namespace Server.Spells.Second
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Cunning", "Uus Wis",
             212,
-            9061);
-            //Reagent.MandrakeRoot,
-            //Reagent.Nightshade);
+            9061,
+            Reagent.MandrakeRoot,
+            Reagent.Nightshade);
         public CunningSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

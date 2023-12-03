@@ -12,13 +12,14 @@ namespace Server.Spells.Mysticism
         public override SpellCircle Circle { get { return SpellCircle.Fifth; } }
 
 		private static SpellInfo m_Info = new SpellInfo(
-			"Spell Trigger", "In Vas Ort Ex ",
-			230,
-			9022);
-			//Reagent.Garlic,
-			//Reagent.MandrakeRoot,
-			//Reagent.SpidersSilk,
-			//Reagent.DragonBlood);
+				"Spell Trigger", "In Vas Ort Ex ",
+				230,
+				9022,
+				Reagent.Garlic,
+				Reagent.MandrakeRoot,
+				Reagent.SpidersSilk,
+				Reagent.DragonBlood
+			);
 
 		public SpellTriggerSpell( Mobile caster, Item scroll ) : base( caster, scroll, m_Info )
 		{

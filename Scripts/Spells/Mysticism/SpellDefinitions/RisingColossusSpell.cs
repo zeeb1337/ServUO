@@ -12,13 +12,14 @@ namespace Server.Spells.Mysticism
         public override SpellCircle Circle { get { return SpellCircle.Eighth; } }
 
 		private static SpellInfo m_Info = new SpellInfo(
-			"Rising Colossus", "Kal Vas Xen Corp Ylem",
-			230,
-			9022);
-			//Reagent.DaemonBone,
-			//Reagent.DragonBlood,
-			//Reagent.FertileDirt,
-			//Reagent.Nightshade);
+				"Rising Colossus", "Kal Vas Xen Corp Ylem",
+				230,
+				9022,
+				Reagent.DaemonBone,
+				Reagent.DragonBlood,
+				Reagent.FertileDirt,
+				Reagent.Nightshade
+			);
 
 		public RisingColossusSpell( Mobile caster, Item scroll ) : base( caster, scroll, m_Info )
 		{

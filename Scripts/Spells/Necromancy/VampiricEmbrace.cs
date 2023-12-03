@@ -8,11 +8,10 @@ namespace Server.Spells.Necromancy
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Vampiric Embrace", "Rel Xen An Sanct",
             203,
-            9031);
-            //Reagent.BatWing,
-            //Reagent.NoxCrystal,
-            //Reagent.PigIron);
-
+            9031,
+            Reagent.BatWing,
+            Reagent.NoxCrystal,
+            Reagent.PigIron);
         public VampiricEmbraceSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

@@ -12,12 +12,13 @@ namespace Server.Spells.Mysticism
         public override SpellCircle Circle { get { return SpellCircle.Fifth; } }
 
         private static SpellInfo m_Info = new SpellInfo(
-            "Mass Sleep", "Vas Zu",
-            230,
-            9022);
-            //Reagent.Ginseng,
-            //Reagent.Nightshade,
-            //Reagent.SpidersSilk);
+                "Mass Sleep", "Vas Zu",
+                230,
+                9022,
+                Reagent.Ginseng,
+                Reagent.Nightshade,
+                Reagent.SpidersSilk
+            );
 
         public MassSleepSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
         {

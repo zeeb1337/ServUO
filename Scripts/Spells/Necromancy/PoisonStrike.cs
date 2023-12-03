@@ -12,8 +12,8 @@ namespace Server.Spells.Necromancy
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Poison Strike", "In Vas Nox",
             203,
-            9031);
-            //Reagent.NoxCrystal);
+            9031,
+            Reagent.NoxCrystal);
 
         public PoisonStrikeSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)

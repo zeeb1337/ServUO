@@ -14,13 +14,14 @@ namespace Server.Spells.Mysticism
         public override TimeSpan CastDelayBase { get { return TimeSpan.FromSeconds(5); } }
 
 		private static SpellInfo m_Info = new SpellInfo(
-			"Healing Stone", "Kal In Mani",
-			230,
-			9022);
-			//Reagent.Bone,
-			//Reagent.Garlic,
-			//Reagent.Ginseng,
-			//Reagent.SpidersSilk);
+				"Healing Stone", "Kal In Mani",
+				230,
+				9022,
+				Reagent.Bone,
+				Reagent.Garlic,
+				Reagent.Ginseng,
+				Reagent.SpidersSilk
+			);
 
 		public HealingStoneSpell( Mobile caster, Item scroll ) : base( caster, scroll, m_Info )
 		{

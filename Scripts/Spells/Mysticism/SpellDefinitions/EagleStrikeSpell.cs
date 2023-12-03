@@ -14,13 +14,14 @@ namespace Server.Spells.Mysticism
         public override bool DelayedDamageStacking { get { return false; } }
 
         private static SpellInfo m_Info = new SpellInfo(
-            "Eagle Strike", "Kal Por Xen",
-            230,
-            9022);
-            //Reagent.Bloodmoss,
-            //Reagent.Bone,
-            //Reagent.MandrakeRoot,
-            //Reagent.SpidersSilk);
+                "Eagle Strike", "Kal Por Xen",
+                230,
+                9022,
+                Reagent.Bloodmoss,
+                Reagent.Bone,
+                Reagent.MandrakeRoot,
+                Reagent.SpidersSilk
+            );
 
         public EagleStrikeSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
         {

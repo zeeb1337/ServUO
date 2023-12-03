@@ -13,10 +13,10 @@ namespace Server.Spells.Fourth
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Recall", "Kal Ort Por",
             239,
-            9031);
-            //Reagent.BlackPearl,
-            //Reagent.Bloodmoss,
-            //Reagent.MandrakeRoot);
+            9031,
+            Reagent.BlackPearl,
+            Reagent.Bloodmoss,
+            Reagent.MandrakeRoot);
 
         private readonly RunebookEntry m_Entry;
         private readonly Runebook m_Book;

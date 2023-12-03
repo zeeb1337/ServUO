@@ -13,10 +13,10 @@ namespace Server.Spells.Fifth
             "Poison Field", "In Nox Grav",
             230,
             9052,
-            false);
-            //Reagent.BlackPearl,
-            //Reagent.Nightshade,
-            //Reagent.SpidersSilk);
+            false,
+            Reagent.BlackPearl,
+            Reagent.Nightshade,
+            Reagent.SpidersSilk);
         public PoisonFieldSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

@@ -9,9 +9,9 @@ namespace Server.Spells.Sixth
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Reveal", "Wis Quas",
             206,
-            9002);
-            //Reagent.Bloodmoss,
-            //Reagent.SulfurousAsh);
+            9002,
+            Reagent.Bloodmoss,
+            Reagent.SulfurousAsh);
         public RevealSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

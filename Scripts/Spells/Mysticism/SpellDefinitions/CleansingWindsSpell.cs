@@ -17,11 +17,12 @@ namespace Server.Spells.Mysticism
         private static SpellInfo m_Info = new SpellInfo(
             "Cleansing Winds", "In Vas Mani Hur",
             230,
-            9022);
-			//Reagent.Garlic,
-			//Reagent.Ginseng,
-			//Reagent.MandrakeRoot,
-			//Reagent.DragonBlood);
+            9022,
+            Reagent.Garlic,
+            Reagent.Ginseng,
+            Reagent.MandrakeRoot,
+            Reagent.DragonBlood
+        );
 
         public CleansingWindsSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)

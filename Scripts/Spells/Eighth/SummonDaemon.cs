@@ -9,11 +9,11 @@ namespace Server.Spells.Eighth
             "Summon Daemon", "Kal Vas Xen Corp",
             269,
             9050,
-            false);
-            //Reagent.Bloodmoss,
-            //Reagent.MandrakeRoot,
-            //Reagent.SpidersSilk,
-            //Reagent.SulfurousAsh);
+            false,
+            Reagent.Bloodmoss,
+            Reagent.MandrakeRoot,
+            Reagent.SpidersSilk,
+            Reagent.SulfurousAsh);
         public SummonDaemonSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

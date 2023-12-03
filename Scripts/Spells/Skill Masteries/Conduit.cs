@@ -13,12 +13,13 @@ namespace Server.Spells.SkillMasteries
 	public class ConduitSpell : SkillMasterySpell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-			"Conduit", "Uus Corp Grav",
-			204,
-			9061);
-            //Reagent.NoxCrystal,
-            //Reagent.BatWing,
-            //Reagent.GraveDust);
+				"Conduit", "Uus Corp Grav",
+				204,
+				9061,
+                Reagent.NoxCrystal,
+                Reagent.BatWing,
+                Reagent.GraveDust
+			);
 
 		public override double RequiredSkill{ get { return 90; } }
 		public override double UpKeep { get { return 0; } }

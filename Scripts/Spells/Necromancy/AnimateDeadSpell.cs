@@ -13,9 +13,9 @@ namespace Server.Spells.Necromancy
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Animate Dead", "Uus Corp",
             203,
-            9031);
-            //Reagent.GraveDust,
-            //Reagent.DaemonBlood);
+            9031,
+            Reagent.GraveDust,
+            Reagent.DaemonBlood);
 
         public override TimeSpan CastDelayBase
         {

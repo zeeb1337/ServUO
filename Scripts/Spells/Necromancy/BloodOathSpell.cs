@@ -11,9 +11,8 @@ namespace Server.Spells.Necromancy
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Blood Oath", "In Jux Mani Xen",
             203,
-            9031);
-            //Reagent.DaemonBlood);
-
+            9031,
+            Reagent.DaemonBlood);
         private static readonly Hashtable m_OathTable = new Hashtable();
         private static readonly Hashtable m_Table = new Hashtable();
         public BloodOathSpell(Mobile caster, Item scroll)

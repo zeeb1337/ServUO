@@ -10,9 +10,9 @@ namespace Server.Spells.Sixth
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Invisibility", "An Lor Xen",
             206,
-            9002);
-            //Reagent.Bloodmoss,
-            //Reagent.Nightshade);
+            9002,
+            Reagent.Bloodmoss,
+            Reagent.Nightshade);
         private static readonly Hashtable m_Table = new Hashtable();
         public InvisibilitySpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)

@@ -10,10 +10,10 @@ namespace Server.Spells.Fifth
         private static readonly SpellInfo m_Info = new SpellInfo(
             "Paralyze", "An Ex Por",
             218,
-            9012);
-            //Reagent.Garlic,
-            //Reagent.MandrakeRoot,
-            //Reagent.SpidersSilk);
+            9012,
+            Reagent.Garlic,
+            Reagent.MandrakeRoot,
+            Reagent.SpidersSilk);
         public ParalyzeSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

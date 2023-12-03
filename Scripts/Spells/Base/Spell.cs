@@ -385,6 +385,8 @@ namespace Server.Spells
 
 		public virtual bool ConsumeReagents()
 		{
+			return true; // Disable reagents for spellcasting
+			
             if ((m_Scroll != null && !(m_Scroll is SpellStone)) || !m_Caster.Player)
             {
 				return true;

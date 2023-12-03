@@ -13,10 +13,10 @@ namespace Server.Spells.Fourth
             "Fire Field", "In Flam Grav",
             215,
             9041,
-            false);
-            //Reagent.BlackPearl,
-            //Reagent.SpidersSilk,
-            //Reagent.SulfurousAsh);
+            false,
+            Reagent.BlackPearl,
+            Reagent.SpidersSilk,
+            Reagent.SulfurousAsh);
         public FireFieldSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {

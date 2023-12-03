@@ -11,13 +11,14 @@ namespace Server.Spells.Mysticism
         public override DamageType SpellDamageType { get { return DamageType.SpellAOE; } }
 
         private static SpellInfo m_Info = new SpellInfo(
-            "Nether Cyclone", "Grav Hur",
-            230,
-            9022);
-            //Reagent.MandrakeRoot,
-            //Reagent.Nightshade,
-            //Reagent.SulfurousAsh,
-            //Reagent.Bloodmoss);
+                "Nether Cyclone", "Grav Hur",
+                230,
+                9022,
+                Reagent.MandrakeRoot,
+                Reagent.Nightshade,
+                Reagent.SulfurousAsh,
+                Reagent.Bloodmoss
+            );
 
         public NetherCycloneSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
         {
